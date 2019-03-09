@@ -1,4 +1,5 @@
 :root{
+  --type-font: Georgia sans-serif;
   --fw-1: 300;
   --fw-2: 700;
   --fw-3: 900;
@@ -14,7 +15,7 @@
   --clr-4: #171f29;
   --clr-5: #1fd030;
 
-  -clr-dark: rgba(0,0,0,.25);
+  --clr-dark: rgba(0,0,0,.25);
   --clr-body: rgba(255,255,255,.8);
 }
 
@@ -24,8 +25,28 @@
 }
 
 body {
+  min-height: 100vh;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: var(--clr-4);
+  color: var(--clr-body);
+  font-size: var(--fs-1);
+  font-weight: var(--fw-1);
+  line-height: 1.6;
+}
+
+strong {
+  font-weight: var(--fw-3);
+}
+
+p {
+  margin: 0 0 .25em;
+}
+
+.logo {
+  height: 60px;
+  width: 100px;
+  padding-bottom: 0;
 }
