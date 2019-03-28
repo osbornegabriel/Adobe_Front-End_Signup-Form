@@ -134,3 +134,7 @@ p {
   width: 100%;
   padding: .6em;
 }
+
+.recaptcha {
+  margin: .5em 0 1em;
+}
