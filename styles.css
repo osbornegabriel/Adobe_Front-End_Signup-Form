@@ -51,6 +51,22 @@ p {
   padding-bottom: 0;
 }
 
+.title, .subheading {
+  color: var(--clr-1);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.list--unstyled {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.list li {
+  margin-bottom: 1em;
+}
+
 .steam-signup-form {
   display: grid;
   width: 960px;
