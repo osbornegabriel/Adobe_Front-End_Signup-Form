@@ -17,6 +17,7 @@
 
   --clr-dark: rgba(0,0,0,.25);
   --clr-body: rgba(255,255,255,.8);
+  --clr-solid-dark: rgba(0,0,0,.7);
 }
 
 
@@ -45,16 +46,19 @@ p {
   margin: 0 0 .25em;
 }
 
-.logo {
-  height: 60px;
-  width: 100px;
-  padding-bottom: 0;
+a {
+  color: var(--clr-1);
+}
+
+a:hover {
+  color: inherit;
 }
 
 .title, .subheading {
   color: var(--clr-1);
   text-transform: uppercase;
   letter-spacing: 1px;
+  line-height: 1;
 }
 
 .title {
@@ -81,11 +85,37 @@ p {
   margin-bottom: 1em;
 }
 
+.button {
+  all: unset;
+  cursor: pointer;
+  display: inline-block;
+  background: var(--clr-5);
+  padding: .5em 1.75em;
+  color: var(--clr-solid-dark);
+  font-weight: var(--fw-3);
+  transform: scale(1);
+  transition: transform ease-in-out 150;
+}
+
+.button:hover {
+  transform: scale(1.1);
+}
+
+.button + * {
+  margin-left: 2em;
+}
+
+.logo {
+  height: 60px;
+  width: 100px;
+  padding-bottom: 0;
+}
+
 .steam-signup-form {
   display: grid;
   width: 960px;
   grid-template-rows: repeat(3,auto);
-  grid-template-columns: 35% 1fr 3em;
+  grid-template-columns: 35% minmax(500px, 1fr) 3em;
   position: relative;
 }
 
