@@ -4,7 +4,7 @@
   --fw-2: 700;
   --fw-3: 900;
 
-  --fs-1: 1.125;
+  --fs-1: 1.125rem;
   --fs-2: 1.25rem;
   --fs-3: 2rem;
   --fs-small: .75rem;
@@ -67,6 +67,10 @@ p {
   font-size: var(--fs-2);
 }
 
+.fineprint {
+  font-size: var(--fs-small);
+}
+
 .list--unstyled {
   margin: 0;
   padding: 0;
@@ -115,5 +119,18 @@ p {
 }
 
 .form {
-  margin: 2em 0 0;
+  margin: 1.5em 0 0;
+}
+
+.form__label {
+  display: block;
+}
+
+.form__text {
+  all: unset;
+  display: block;
+  margin: .25em 0 1em;
+  background: var(--clr-dark);
+  width: 100%;
+  padding: .6em;
 }
